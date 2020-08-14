@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat";
+}
+
+body {
+  background: #ffffff;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+input,
+button,
+textarea {
+  outline: 0;
+}
+
+.content {
+  padding-left: 108px;
+  padding-right: 108px;
+  margin: 0 auto;
+  background: none;
+}
+
+/* nav-bar */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.nav-bar img {
+  width: 16.8rem;
+  height: 11.8rem;
+}
+
+/* end nav-bar */
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100vh;
+
+  background: url("./images/header.png") center no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header div.fade {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.header div.container {
+  display: flex;
+  z-index: 5;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header div.infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 3.2rem;
+
+  white-space: nowrap
+}
+
+.header div.infos h1 {
+  font-size: 5.4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.header div.infos h2 {
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.header div.infos h2 span {
+  font-size: 3.6rem;
+  color: #40e0ee;
+}
+
+.header form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 9rem;
+}
+
+.header form input {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  color: #333333;
+
+  font-size: 2rem;
+  padding-left: 2rem;
+  border-radius: 14px;
+  border: 0;
+
+  align-items: center;
+}
+
+.header form input:focus {
+  border-right: 5px solid #40e0ee;
+}
+
+.header form textarea {
+  display: flex;
+  height: 15rem;
+  width: 100%;
+  color: #333333;
+
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  border-radius: 14px;
+  border: 0;
+
+  margin-top: 1.6rem;
+  align-items: center;
+}
+
+.header form textarea:focus {
+  border-right: 5px solid #40e0ee;
+}
+
+.header form div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6.4rem;
+}
+
+.header form h2 {
+  color: #fff;
+  font-size: 4.4rem;
+  font-weight: 400;
+}
+
+.header form p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.header form input + input {
+  margin-top: 1.6rem;
+}
+
+.header form button {
+  margin-top: 3.2rem;
+  height: 5rem;
+  width: 100%;
+  border: 0;
+
+  background-color: #40e0ee;
+
+  border-radius: 14px;
+  font-size: 2rem;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.header form button:hover {
+  border-radius: 14px;
+  border: 1px solid #40e0ee;
+  background-color: transparent;
+
+  color: #40e0ee;
+}
+
+/* end header */
+
+/* infos */
+.infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 12.8rem;
+  margin-bottom: 12.4rem;
+}
+
+.infos div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.infos div img {
+  width: 256px;
+}
+
+.infos div h2 {
+  margin-top: 1.6rem;
+  font-size: 3.6rem;
+  color: #595959;
+  font-weight: 400;
+}
+
+.infos div p {
+  margin-top: 0.8rem;
+  font-size: 2rem;
+  color: #595959;
+  max-width: 256px;
+  text-align: center;
+}
+
+/* end infos */
+
+/* counter  */
+.counter {
+  display: flex;
+  flex: 1;
+  height: 320px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: url("./images/countes.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.counter .fade {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+
+.counter div {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  align-items: center;
+}
+
+.counter div.middle {
+  margin-right: 24rem;
+  margin-left: 24rem;
+}
+
+.counter div h3 {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 500;
+}
+.counter div p {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+/* end counter */
+
+/* about */
+
+.about {
+  margin-top: 10rem;
+}
+
+.about div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about div h2 {
+  font-size: 5.4rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+.about div p {
+  font-size: 2rem;
+  margin-top: 0;
+  color: #737373;
+}
+
+.about div.infos {
+  margin-top: 6.4rem;
+}
+
+.about div.infos img {
+  max-width: 544px;
+}
+
+.about div.infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about div.infos div.down {
+  margin-top: 6.4rem;
+}
+
+.about div.infos div div strong {
+  font-size: 3.2rem;
+  margin-bottom: 0;
+  color: #40e0ee;
+}
+/* end about */
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex: 1;
+  height: 320px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #40e0ee;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  align-items: center;
+}
+
+.footer div h3 {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+.footer div p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* end footer */
